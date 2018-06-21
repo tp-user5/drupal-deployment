@@ -1,0 +1,11 @@
+uuid: 750fcab8-925c-4d98-af42-a900ba7db2b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.service_lemonde
+id: node.service_lemonde
+target_entity_type_id: node
+target_bundle: service_lemonde
+default_langcode: site_default
+language_alterable: false

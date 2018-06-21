@@ -1,0 +1,45 @@
+uuid: c0a57029-0f2e-462b-937c-5281da9a6acd
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.group_nodes
+  module:
+    - block_visibility_groups
+    - ctools
+    - system
+    - views
+  theme:
+    - divert
+id: divert_views_block__group_nodes_block_1
+theme: divert
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:group_nodes-block_1'
+settings:
+  id: 'views_block:group_nodes-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  'entity_bundle:group':
+    id: 'entity_bundle:group'
+    bundles:
+      fan_d_hotel: fan_d_hotel
+    negate: false
+    context_mapping:
+      group: '@group.group_route_context:group'
+  request_path:
+    id: request_path
+    pages: '/group/*/*'
+    negate: true
+    context_mapping: {  }

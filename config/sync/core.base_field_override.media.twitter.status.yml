@@ -1,0 +1,22 @@
+uuid: 2451f431-1b22-4225-a9f2-4c29acf18512
+langcode: fr
+status: true
+dependencies:
+  config:
+    - media.type.twitter
+id: media.twitter.status
+field_name: status
+entity_type: media
+bundle: twitter
+label: Publié
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

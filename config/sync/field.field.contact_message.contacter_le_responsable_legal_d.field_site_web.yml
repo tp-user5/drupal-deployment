@@ -1,0 +1,23 @@
+uuid: 4b4f1803-8487-4e0d-85f7-3e00045f8758
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.contacter_le_responsable_legal_d
+    - field.storage.contact_message.field_site_web
+  module:
+    - link
+id: contact_message.contacter_le_responsable_legal_d.field_site_web
+field_name: field_site_web
+entity_type: contact_message
+bundle: contacter_le_responsable_legal_d
+label: 'Site Web'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 2
+field_type: link

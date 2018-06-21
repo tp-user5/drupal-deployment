@@ -1,0 +1,18 @@
+uuid: d05ae4ed-4f41-4a53-8220-e008be62614f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.restaurant
+id: node.restaurant.title
+field_name: title
+entity_type: node
+bundle: restaurant
+label: Titre
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

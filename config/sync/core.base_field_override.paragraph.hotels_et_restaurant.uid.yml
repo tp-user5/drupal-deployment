@@ -1,0 +1,20 @@
+uuid: 2f218cf0-b79b-4f62-8416-e4615fd6a733
+langcode: fr
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.hotels_et_restaurant
+id: paragraph.hotels_et_restaurant.uid
+field_name: uid
+entity_type: paragraph
+bundle: hotels_et_restaurant
+label: 'Écrit par'
+description: 'L''identifiant (ID) utilisateur de l''auteur du paragraphe.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\paragraphs\Entity\Paragraph::getCurrentUserId'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,24 @@
+#header {
+  background: white;
+}
+
+.title,
+.site-branding__slogan,
+.site-branding__name a {
+  color: orange;
+}
+
+.article-teaser-left,
+.article-teaser-right {
+  display: inline-block;
+  width: 49%;
+}
+
+.article-teaser-left {
+  vertical-align: top;
+}
+
+
+
+
+

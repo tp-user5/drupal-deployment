@@ -1,0 +1,19 @@
+layout_four_squares:
+  label: 'Four squares'
+  path: layouts/four_squares
+  template: layout--four_squares
+  library: ive/layout_four_squares
+  category: 'Ive'
+  default_region: upper_left
+  icon_map:
+    - [upper_left, upper_right]
+    - [lower_left, lower_right]
+  regions:
+    upper_left:
+      label: 'Upper left'
+    upper_right:
+      label: 'Upper right'
+    lower_left:
+      label: 'Lower left'
+    lower_right:
+      label: 'Lower right'

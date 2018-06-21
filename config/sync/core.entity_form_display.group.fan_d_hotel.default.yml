@@ -1,0 +1,57 @@
+uuid: f4fdcfba-6765-4bdb-840c-ac739895c518
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.group.fan_d_hotel.field_hotel
+    - group.type.fan_d_hotel
+  module:
+    - field_layout
+    - inline_entity_form
+    - layout_discovery
+    - path
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: group.fan_d_hotel.default
+targetEntityType: group
+bundle: fan_d_hotel
+mode: default
+content:
+  field_hotel:
+    weight: 31
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      override_labels: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
+  label:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  uid: true

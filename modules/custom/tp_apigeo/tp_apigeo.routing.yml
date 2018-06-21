@@ -1,0 +1,33 @@
+tp_apigeo.index:
+  path: '/apigeo/ind/{test}'
+  defaults:
+    _title: 'Accueil API Geo'
+    _controller: 'Drupal\tp_apigeo\Controller\ApigeoController::content'
+    test: 'TEST'
+  requirements:
+    _access: 'TRUE'
+
+tp_apigeo.region:
+  path: '/apigeo/region'
+  defaults:
+    _title: 'Région API Geo'
+    _controller: 'Drupal\tp_apigeo\Controller\RegionController::content'
+  requirements:
+    _access: 'TRUE'
+
+tp_apigeo.selector_form:
+  path: '/apigeo/selectorform'
+  defaults:
+    _title: 'Selector Form API Geo'
+    _form: 'Drupal\tp_apigeo\Form\SelectorForm'
+  requirements:
+    _access: 'TRUE'
+
+tp_apigeo.geo_controller_commune:
+  path: '/commune/{code_commune}'
+  defaults:
+    _controller: '\Drupal\tp_apigeo\Controller\GeoController::commune'
+    _title_callback: '\Drupal\tp_apigeo\Controller\GeoController::commune_title'
+    code_commune: null
+  requirements:
+    _permission: 'access content'

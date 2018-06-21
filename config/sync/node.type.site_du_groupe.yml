@@ -1,0 +1,30 @@
+uuid: 9acd2a05-2fd3-4da6-ac97-6c30ed24cabb
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - scheduler
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+  scheduler:
+    expand_fieldset: when_required
+    fields_display_mode: vertical_tab
+    publish_enable: false
+    publish_past_date: error
+    publish_required: false
+    publish_revision: false
+    publish_touch: false
+    unpublish_enable: false
+    unpublish_required: false
+    unpublish_revision: false
+name: 'Site du groupe'
+type: site_du_groupe
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

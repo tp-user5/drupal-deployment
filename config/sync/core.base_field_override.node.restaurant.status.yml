@@ -1,0 +1,22 @@
+uuid: 0bfe1ab9-dbc4-4f39-b519-ef9fe3aefc81
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.restaurant
+id: node.restaurant.status
+field_name: status
+entity_type: node
+bundle: restaurant
+label: Publié
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

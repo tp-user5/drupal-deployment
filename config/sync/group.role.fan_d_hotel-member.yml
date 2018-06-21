@@ -1,0 +1,21 @@
+uuid: 71ca341b-5430-4abd-a70b-e18467e0c86f
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.fan_d_hotel
+id: fan_d_hotel-member
+label: Member
+weight: -100
+internal: true
+audience: member
+group_type: fan_d_hotel
+permissions_ui: true
+permissions:
+  0: 'view group'
+  1: 'access content overview'
+  2: 'update own group_membership content'
+  3: 'leave group'
+  4: 'view group_membership content'
+  10: 'access group_node overview'
+  11: 'view group_node:evenement entity'

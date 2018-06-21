@@ -1,0 +1,18 @@
+uuid: 592e4a2d-4cf4-4fb0-83c6-37ef9dadbbed
+langcode: fr
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.hotels_et_restaurant
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.hotels_et_restaurant
+target_entity_type_id: paragraph
+target_bundle: hotels_et_restaurant
+default_langcode: site_default
+language_alterable: false

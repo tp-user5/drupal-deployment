@@ -1,0 +1,17 @@
+uuid: 71d09820-8315-4658-9c6d-21dd882afefc
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: applati
+label: Applati
+effects:
+  2a45a237-f259-42e1-b103-f68fff1c7e2c:
+    uuid: 2a45a237-f259-42e1-b103-f68fff1c7e2c
+    id: focal_point_crop
+    weight: 1
+    data:
+      width: 400
+      height: 50
+      crop_type: focal_point

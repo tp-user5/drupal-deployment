@@ -1,0 +1,24 @@
+uuid: 6e08781a-069b-4f11-b022-065cda586d84
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.hotels
+  module:
+    - views
+  theme:
+    - divert
+id: divert_views_block__hotels_block_1
+theme: divert
+region: sidebar_first
+weight: -8
+provider: null
+plugin: 'views_block:hotels-block_1'
+settings:
+  id: 'views_block:hotels-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }

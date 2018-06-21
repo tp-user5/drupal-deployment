@@ -1,0 +1,63 @@
+<?php
+
+use Drupal\Core\Database\Database;
+
+function hello_schema () {
+
+  $schema['hello_node_history'] = [
+    'description' => 'Stores node update history.',
+    'fields' => [
+      'hid' => [
+        'description' => 'Primary Key: Unique history ID.',
+        'type' => 'serial',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ],
+      'nid' => [
+        'description' => 'Node ID.',
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ],
+      'uid' => [
+        'description' => 'Node ID.',
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ],
+      'update_time' => [
+        'description' => 'Timestamp of node update.',
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ],
+    ],
+    'primary key' => ['hid'],
+    'indexes' => ['nid' => ['nid']],
+  ];
+  return $schema;
+}
+
+/**
+ * Implements hoo_uninstall()
+ */
+function hello_uninstall() {
+  \Drupal::state()->delete('hello_form_submission_time');
+}
+
+/**
+ * Add a field 'uid' to the 'hello_node_history' table
+ */
+function hello_update_8002 () {
+
+  $field_spec =
+  [
+      'description' => 'User ID.',
+      'type' => 'int',
+      'unsigned' => TRUE,
+      'not null' => TRUE,
+  ];
+
+  $schema = Database::getConnection()->schema();
+  $schema->addField('hello_node_history', 'uid', $field_spec);
+}

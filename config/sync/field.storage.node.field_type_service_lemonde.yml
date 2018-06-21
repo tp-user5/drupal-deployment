@@ -1,0 +1,19 @@
+uuid: 2a2a2f40-e522-4cdb-9444-1406d688fe25
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_type_service_lemonde
+field_name: field_type_service_lemonde
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

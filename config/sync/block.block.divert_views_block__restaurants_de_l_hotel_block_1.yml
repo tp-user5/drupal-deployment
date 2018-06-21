@@ -1,0 +1,33 @@
+uuid: 901de597-9c4f-4f86-b9ee-0b48934b690c
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.restaurants_de_l_hotel
+  module:
+    - node
+    - views
+  theme:
+    - divert
+id: divert_views_block__restaurants_de_l_hotel_block_1
+theme: divert
+region: sidebar_second
+weight: -8
+provider: null
+plugin: 'views_block:restaurants_de_l_hotel-block_1'
+settings:
+  id: 'views_block:restaurants_de_l_hotel-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      hotel: hotel
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

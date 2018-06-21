@@ -1,0 +1,20 @@
+uuid: 4b41c540-cea1-43cb-8fdc-aa03674c2e56
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.flex_content
+  module:
+    - path
+id: node.flex_content.path
+field_name: path
+entity_type: node
+bundle: flex_content
+label: 'Alias d''URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

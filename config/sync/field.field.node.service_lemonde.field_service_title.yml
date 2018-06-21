@@ -1,0 +1,19 @@
+uuid: 8c0fcb9a-cdb0-4893-989e-79cb3489508a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_service_title
+    - node.type.service_lemonde
+id: node.service_lemonde.field_service_title
+field_name: field_service_title
+entity_type: node
+bundle: service_lemonde
+label: 'Service Title'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

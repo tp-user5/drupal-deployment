@@ -1,0 +1,22 @@
+uuid: 6bd7f111-0307-4d17-9ea5-42e12e798e37
+langcode: fr
+status: true
+dependencies:
+  module:
+    - performance_tests
+  theme:
+    - bartik
+_core:
+  default_config_hash: tahFT7GSkZVFkznTx1ACHuPesi6UBb04YqyEylMEPpo
+id: perf_cctxt_block
+theme: bartik
+region: sidebar_second
+weight: -14
+provider: null
+plugin: cachable_contextual_block
+settings:
+  id: cachable_contextual_block
+  label: 'Cachable Contextual Block'
+  provider: performance_tests
+  label_display: '0'
+visibility: {  }

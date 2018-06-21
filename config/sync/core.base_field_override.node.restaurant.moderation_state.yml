@@ -1,0 +1,18 @@
+uuid: 646cde84-fc16-4ec5-8508-4c111bc958e2
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.restaurant
+id: node.restaurant.moderation_state
+field_name: moderation_state
+entity_type: node
+bundle: restaurant
+label: 'État de modération'
+description: 'L''état de modération de cet élément de contenu.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

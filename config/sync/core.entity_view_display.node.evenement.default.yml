@@ -1,0 +1,34 @@
+uuid: 204846fd-4afe-495d-940c-38b3f913a9ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.evenement.body
+    - node.type.evenement
+  module:
+    - field_layout
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: node.evenement.default
+targetEntityType: node
+bundle: evenement
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  langcode: true

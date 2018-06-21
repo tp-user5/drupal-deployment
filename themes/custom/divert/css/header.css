@@ -1,0 +1,28 @@
+#header_menu ul {
+  display: inline;
+}
+
+#header_menu li {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+#header_menu li > a {
+  color: #464f57;
+  border-bottom-color: #d2d6db;
+  
+  padding: 0 5px;
+  border-left: solid 1px rgba(0,0,0,0.1);
+  border-bottom: solid 1px rgba(0,0,0,0.1);
+  line-height: 31px;
+  font-size: 12px;
+  font-family: arial, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#header_menu li > a:link,
+#header_menu li > a:visited {
+  color: #000b15;
+}

@@ -1,0 +1,19 @@
+uuid: 618a5be5-519a-45ba-9be7-24e6751e34bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.fan_d_hotel
+    - node.type.evenement
+  module:
+    - gnode
+    - node
+id: fan_d_hotel-group_node-evenement
+label: 'Fan d''hôtel: Group node (Évènement)'
+description: 'Adds <em class="placeholder">Évènement</em> content to groups both publicly and privately.'
+group_type: fan_d_hotel
+content_plugin: 'group_node:evenement'
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1
+  use_creation_wizard: true

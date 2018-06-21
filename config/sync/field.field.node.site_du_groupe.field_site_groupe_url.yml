@@ -1,0 +1,23 @@
+uuid: f651e68e-8563-4e9e-88cf-6dbea2e28ace
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_site_groupe_url
+    - node.type.site_du_groupe
+  module:
+    - link
+id: node.site_du_groupe.field_site_groupe_url
+field_name: field_site_groupe_url
+entity_type: node
+bundle: site_du_groupe
+label: 'Site groupe URL'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

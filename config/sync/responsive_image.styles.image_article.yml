@@ -1,0 +1,30 @@
+uuid: 246460ed-53d8-45bb-9988-88d35959bf26
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.ive_mobile
+    - image.style.ive_narrow
+    - image.style.ive_wide
+  theme:
+    - ive
+id: image_article
+label: 'Image article'
+image_style_mappings:
+  -
+    breakpoint_id: ive.wide
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: ive_wide
+  -
+    breakpoint_id: ive.narrow
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: ive_narrow
+  -
+    breakpoint_id: ive.mobile
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: ive_mobile
+breakpoint_group: ive
+fallback_image_style: '_original image_'

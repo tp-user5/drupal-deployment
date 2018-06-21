@@ -1,0 +1,22 @@
+uuid: 8432405a-0051-455b-ad11-0a1ba406b096
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - divert
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: divert_content
+theme: divert
+region: content
+weight: -4
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

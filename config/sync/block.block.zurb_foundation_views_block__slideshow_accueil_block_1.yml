@@ -1,0 +1,36 @@
+uuid: 6ac6ed77-5c62-40b8-a855-5960b6a7ef9c
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.slideshow_accueil
+  module:
+    - block_visibility_groups
+    - system
+    - views
+  theme:
+    - zurb_foundation
+id: zurb_foundation_views_block__slideshow_accueil_block_1
+theme: zurb_foundation
+region: content
+weight: -9
+provider: null
+plugin: 'views_block:slideshow_accueil-block_1'
+settings:
+  id: 'views_block:slideshow_accueil-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

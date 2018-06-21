@@ -1,0 +1,18 @@
+uuid: e05c2653-de5d-411e-8f09-2c15f617b24c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.flex_content
+id: node.flex_content.created
+field_name: created
+entity_type: node
+bundle: flex_content
+label: 'Écrit le'
+description: 'L''heure à laquelle le nœud a été créé.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

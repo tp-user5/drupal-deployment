@@ -1,0 +1,48 @@
+
+performance_tests.cache_render_explorer:
+  path: 'performance_tests/cache_render_explorer/{string}'
+  defaults:
+    _controller: '\Drupal\performance_tests\Controller\CacheTablesViewerController::cache_render_explorer'
+    _title: 'Cache table viewer'
+    string: null
+  requirements:
+    _permission: 'access content'
+
+
+
+performance_tests.cache_page_explorer:
+  path: 'performance_tests/cache_page_explorer/{string}'
+  defaults:
+    _controller: '\Drupal\performance_tests\Controller\CacheTablesViewerController::cache_page_explorer'
+    _title: 'Cache table viewer'
+    string: null
+  requirements:
+    _permission: 'access content'
+
+
+performance_tests.cache_dynamic_page_cache:
+  path: 'performance_tests/cache_dynamic_page_cache_explorer/{string}'
+  defaults:
+    _controller: '\Drupal\performance_tests\Controller\CacheTablesViewerController::cache_dynamic_page_cache_explorer'
+    _title: 'Cache table viewer'
+    string: null
+  requirements:
+    _permission: 'access content'
+
+performance_tests.cached_page_example_1:
+  path: 'performance_tests/cached_page_example_1/{string}'
+  defaults:
+    _controller: '\Drupal\performance_tests\Controller\CacheExamplesController::page1'
+    _title: 'Cached page 1'
+    string: null
+  requirements:
+    _permission: 'access content'
+
+performance_tests.cached_page_example_2:
+  path: 'performance_tests/cached_page_example_2/{string}'
+  defaults:
+    _controller: '\Drupal\performance_tests\Controller\CacheExamplesController::page2'
+    _title: 'Cached page 2'
+    string: null
+  requirements:
+    _permission: 'access content'

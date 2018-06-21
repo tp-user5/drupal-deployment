@@ -1,0 +1,14 @@
+uuid: 5762ca2c-3213-44eb-96c6-3d2326d8f3c6
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.fan_d_hotel
+id: fan_d_hotel-anonymous
+label: Anonymous
+weight: -102
+internal: true
+audience: anonymous
+group_type: fan_d_hotel
+permissions_ui: true
+permissions: {  }

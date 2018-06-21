@@ -1,0 +1,46 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a four squares layout.
+ *
+ * Available variables:
+ * - content: The content for this layout.
+ * - attributes: HTML attributes for the layout <div>.
+ *
+ * @ingroup themeable
+ */
+#}
+{%
+    set classes = [
+    'layout',
+    'layout--four_squares',
+]
+%}
+{% if content %}
+    <div{{ attributes.addClass(classes) }}>
+        <h1>layout--four_squares</h1>
+        {% if content.upper_left %}
+            <div {{ region_attributes.upper_left.addClass('layout__region', 'layout__region--upper_left') }}>
+                {{ content.upper_left }}
+            </div>
+        {% endif %}
+
+        {% if content.upper_right %}
+            <div {{ region_attributes.upper_right.addClass('layout__region', 'layout__region--upper_right') }}>
+                {{ content.upper_right }}
+            </div>
+        {% endif %}
+
+        {% if content.lower_left %}
+            <div {{ region_attributes.lower_left.addClass('layout__region', 'layout__region--lower_left') }}>
+                {{ content.lower_left }}
+            </div>
+        {% endif %}
+
+        {% if content.lower_right %}
+            <div {{ region_attributes.lower_right.addClass('layout__region', 'layout__region--lower_right') }}>
+                {{ content.lower_right }}
+            </div>
+        {% endif %}
+    </div>
+{% endif %}

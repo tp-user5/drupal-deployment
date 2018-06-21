@@ -1,0 +1,17 @@
+uuid: 31181395-f263-459e-a7ef-aa485c85407c
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.fan_d_hotel
+  module:
+    - user
+id: fan_d_hotel-group_membership
+label: 'Fan d''hôtel: Group membership'
+description: 'Adds users to groups as members.'
+group_type: fan_d_hotel
+content_plugin: group_membership
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1
+  use_creation_wizard: true

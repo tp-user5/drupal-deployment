@@ -1,0 +1,10 @@
+uuid: d15bbbdd-d417-4bd1-9319-d48c8cb921fa
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.hotel_du_restaurant
+label: 'Hôtel du restaurant'
+targetEntityType: node
+cache: true

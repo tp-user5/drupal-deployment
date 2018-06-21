@@ -1,0 +1,28 @@
+uuid: 4ccd9d34-418f-4591-9bff-f715a64d80a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_hotel
+    - group.type.fan_d_hotel
+    - node.type.hotel
+id: group.fan_d_hotel.field_hotel
+field_name: field_hotel
+entity_type: group
+bundle: fan_d_hotel
+label: Hôtel
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      hotel: hotel
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

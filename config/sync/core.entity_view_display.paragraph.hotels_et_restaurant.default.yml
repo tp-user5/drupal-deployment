@@ -1,0 +1,39 @@
+uuid: 874f4ae3-b878-419b-bf3b-e0f6fa5864a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.hotels_et_restaurant.field_hotels
+    - field.field.paragraph.hotels_et_restaurant.field_restaurants
+    - paragraphs.paragraphs_type.hotels_et_restaurant
+  module:
+    - field_layout
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: paragraph.hotels_et_restaurant.default
+targetEntityType: paragraph
+bundle: hotels_et_restaurant
+mode: default
+content:
+  field_hotels:
+    weight: 0
+    label: above
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_restaurants:
+    weight: 1
+    label: above
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden: {  }

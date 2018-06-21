@@ -1,0 +1,57 @@
+uuid: 7ea81af6-0c6a-447b-a7c3-bdb9e875aa7f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.service_lemonde.field_service_title
+    - field.field.node.service_lemonde.field_service_url
+    - field.field.node.service_lemonde.field_type_service_lemonde
+    - node.type.service_lemonde
+  module:
+    - field_layout
+    - layout_discovery
+    - link
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: node.service_lemonde.default
+targetEntityType: node
+bundle: service_lemonde
+mode: default
+content:
+  field_service_title:
+    weight: 103
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_service_url:
+    weight: 102
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_type_service_lemonde:
+    weight: 101
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  langcode: true

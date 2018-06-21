@@ -1,0 +1,9 @@
+uuid: 908b0cad-c23a-4b30-9038-e35d561114d0
+langcode: en
+status: true
+dependencies: {  }
+id: hotels_et_restaurant
+label: 'Hôtels et restaurant'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

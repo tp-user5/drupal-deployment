@@ -1,0 +1,34 @@
+uuid: 60c60cf0-0dfe-4253-b966-d04191b0df99
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.hotel.field_hotel_categorie
+    - field.field.node.hotel.field_hotel_description
+    - field.field.node.hotel.field_hotel_photos
+    - field.field.node.hotel.field_type_d_hotels
+    - node.type.hotel
+  module:
+    - field_layout
+    - layout_discovery
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: node.hotel.teaser
+targetEntityType: node
+bundle: hotel
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  field_hotel_categorie: true
+  field_hotel_description: true
+  field_hotel_photos: true
+  field_type_d_hotels: true
+  langcode: true

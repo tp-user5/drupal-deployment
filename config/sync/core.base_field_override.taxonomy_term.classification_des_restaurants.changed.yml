@@ -1,0 +1,18 @@
+uuid: d7c68cbe-7f11-479b-9f28-b985eb2d2e97
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.classification_des_restaurants
+id: taxonomy_term.classification_des_restaurants.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: classification_des_restaurants
+label: Modifié
+description: 'Le moment auquel le terme a été modifié pour la dernière fois.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

@@ -1,0 +1,28 @@
+uuid: bfe836a7-6626-4f44-9e2a-e5c1c4e7270c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_type_service_lemonde
+    - node.type.service_lemonde
+    - node.type.type_service_lemonde
+id: node.service_lemonde.field_type_service_lemonde
+field_name: field_type_service_lemonde
+entity_type: node
+bundle: service_lemonde
+label: 'Type Service LeMonde'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      type_service_lemonde: type_service_lemonde
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

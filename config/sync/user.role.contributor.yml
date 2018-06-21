@@ -1,0 +1,19 @@
+uuid: f59d0698-08b7-483f-9242-d446d0b81b9f
+langcode: en
+status: true
+dependencies: {  }
+id: contributor
+label: Contributor
+weight: -8
+is_admin: null
+permissions:
+  - 'create article content'
+  - 'delete article revisions'
+  - 'delete own article content'
+  - 'edit own article content'
+  - 'use editorial transition create_new_draft'
+  - 'use editorial transition validation_rejected'
+  - 'use editorial transition waiting_validation'
+  - 'view article revisions'
+  - 'view latest version'
+  - 'view own unpublished content'

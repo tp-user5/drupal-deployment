@@ -1,0 +1,25 @@
+uuid: 56ee046b-51b9-464c-8f47-f15959a7eab4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.flex_content.field_contenu
+    - node.type.flex_content
+  module:
+    - field_layout
+    - layout_discovery
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: node.flex_content.default
+targetEntityType: node
+bundle: flex_content
+mode: default
+content: {  }
+hidden:
+  addtoany: true
+  field_contenu: true
+  langcode: true
+  links: true

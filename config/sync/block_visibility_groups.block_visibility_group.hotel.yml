@@ -1,0 +1,26 @@
+uuid: ba3c1ac4-0d1f-480b-b086-fa354d91b6e4
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - system
+id: hotel
+label: Hôtel
+logic: or
+conditions:
+  27b8225c-9358-4b3d-a3ad-519680728a24:
+    id: node_type
+    bundles:
+      hotel: hotel
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    uuid: 27b8225c-9358-4b3d-a3ad-519680728a24
+  fc526ca0-15a9-44e0-b14e-0acabd3d408c:
+    id: request_path
+    pages: '/hotels*'
+    negate: false
+    context_mapping: {  }
+    uuid: fc526ca0-15a9-44e0-b14e-0acabd3d408c
+allow_other_conditions: true

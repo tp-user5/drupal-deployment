@@ -1,0 +1,23 @@
+uuid: 50f1784a-91e0-4653-8b09-a124f163c86b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_service_url
+    - node.type.service_lemonde
+  module:
+    - link
+id: node.service_lemonde.field_service_url
+field_name: field_service_url
+entity_type: node
+bundle: service_lemonde
+label: 'Service URL'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

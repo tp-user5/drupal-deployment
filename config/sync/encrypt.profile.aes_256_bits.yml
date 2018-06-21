@@ -1,0 +1,13 @@
+uuid: f4ee3654-f921-46b3-9894-30c9d7cf3f42
+langcode: en
+status: true
+dependencies:
+  config:
+    - key.key.256_bits_key
+  module:
+    - real_aes
+id: aes_256_bits
+label: 'AES 256 bits'
+encryption_method: real_aes
+encryption_key: 256_bits_key
+encryption_method_configuration: {  }

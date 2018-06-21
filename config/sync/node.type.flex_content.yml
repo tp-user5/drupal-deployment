@@ -1,0 +1,17 @@
+uuid: 6b60e7fb-5ea0-4460-ba56-bbf2549fa191
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Flex content'
+type: flex_content
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

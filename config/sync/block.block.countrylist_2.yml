@@ -1,0 +1,31 @@
+uuid: 807d6b26-68f1-4821-8ea4-8109135424a3
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:0b796cae-4075-4998-9259-92831545434d'
+  module:
+    - block_content
+    - block_visibility_groups
+  theme:
+    - divert
+id: countrylist_2
+theme: divert
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'block_content:0b796cae-4075-4998-9259-92831545434d'
+settings:
+  id: 'block_content:0b796cae-4075-4998-9259-92831545434d'
+  label: 'Country List'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

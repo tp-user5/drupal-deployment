@@ -1,0 +1,7 @@
+name: 'Performance tests'
+type: module
+description: 'Performance tests'
+core: 8.x
+package: 'Trained People'
+dependencies:
+  - devel

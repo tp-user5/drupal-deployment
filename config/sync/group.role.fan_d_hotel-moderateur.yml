@@ -1,0 +1,31 @@
+uuid: 41aceed0-9a4b-46bd-8d35-0807d6a6b1d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.fan_d_hotel
+id: fan_d_hotel-moderateur
+label: Modérateur
+weight: -6
+internal: false
+audience: member
+group_type: fan_d_hotel
+permissions_ui: true
+permissions:
+  0: 'view group'
+  1: 'access content overview'
+  2: 'administer group'
+  3: 'delete group'
+  4: 'edit group'
+  5: 'administer members'
+  6: 'update own group_membership content'
+  7: 'leave group'
+  8: 'view group_membership content'
+  18: 'access group_node overview'
+  19: 'create group_node:evenement entity'
+  20: 'delete any group_node:evenement entity'
+  21: 'delete own group_node:evenement entity'
+  22: 'update any group_node:evenement entity'
+  23: 'update own group_node:evenement entity'
+  24: 'view group_node:evenement entity'
+  25: 'view unpublished group_node:evenement entity'

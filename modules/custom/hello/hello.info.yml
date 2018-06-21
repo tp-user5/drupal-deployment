@@ -1,0 +1,7 @@
+name: 'Hello'
+type: 'module'
+description: 'Afficher Hello pour test'
+package: 'TEST'
+version: 'VERSION'
+core: '8.x'
+configure: 'hello.admin_form'

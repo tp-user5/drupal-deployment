@@ -1,0 +1,7 @@
+services:
+  annonce.display_message:
+    class: Drupal\annonce\EventSubscriber\AnnonceEventSubscriber
+    arguments: ['@current_user', '@messenger', '@current_route_match', '@database', '@datetime.time']
+    tags:
+      - { name: event_subscriber }
+

@@ -1,0 +1,14 @@
+{
+  "name": "drupal/tp_apigeo",
+  "type": "drupal-module",
+  "description": "TP de l'API Geo de api.gouv.fr",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/tp_apigeo",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/tp_apigeo",
+    "source": "http://cgit.drupalcode.org/tp_apigeo"
+  },
+  "require": { }
+}

@@ -1,0 +1,44 @@
+hello.hello:
+  path: '/hello/{param}/{param_2}'
+  defaults:
+    _title: 'Hello'
+    _controller: 'Drupal\hello\Controller\HelloController::content'
+    param: 'empty_param_1'
+    param_2: ''
+  requirements:
+    _access: 'TRUE'
+
+hello.noeuds:
+  path: '/hello/liste-noeuds/{nodetype}'
+  defaults:
+    _title: 'Page Node listing'
+    _controller: 'Drupal\hello\Controller\HelloNodeListController::content'
+    nodetype: ''
+  requirements:
+    _access: 'TRUE'
+
+hello.node_history:
+  path: '/node/{node}/history'
+  defaults:
+    _title: 'Node history'
+    _controller: 'Drupal\hello\Controller\NodeHistoryController::content'
+  requirements:
+    _access: 'TRUE'
+    #_access_hello: '48'
+
+hello.hello_form:
+  path: '/hello/form/hello'
+  defaults:
+    _form: '\Drupal\hello\Form\HelloForm'
+    _title: 'HelloForm'
+  requirements:
+    _permission: 'Access_hello'
+  
+hello.admin_form:
+  path: '/admin/appearance/block-color'
+  defaults:
+    _title: 'Block Color'
+    _form: '\Drupal\hello\Form\HelloAdminForm'
+  requirements:
+    _permission: 'administer_hello'
+

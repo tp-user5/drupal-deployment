@@ -1,0 +1,7 @@
+global:
+  version: VERSION
+  css:
+    base:
+      css/divert.css: {}
+  js:
+    js/divert.js: {}

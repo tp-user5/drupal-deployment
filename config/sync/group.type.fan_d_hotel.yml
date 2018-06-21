@@ -1,0 +1,10 @@
+uuid: 2a2653c0-1063-4a0f-8dc3-c0109b431060
+langcode: en
+status: true
+dependencies: {  }
+id: fan_d_hotel
+label: 'Fan d''hôtel'
+description: ''
+creator_membership: true
+creator_wizard: true
+creator_roles: {  }

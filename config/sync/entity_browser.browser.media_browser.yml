@@ -1,0 +1,48 @@
+uuid: 1287f345-dbe5-4d00-9d52-8c7b7cdf0947
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.media_browser
+  module:
+    - views
+name: media_browser
+label: 'Media Browser'
+display: modal
+display_configuration:
+  width: '650'
+  height: '500'
+  link_text: 'Select entities'
+  auto_open: false
+selection_display: multi_step_display
+selection_display_configuration:
+  entity_type: node
+  display: label
+  display_settings: {  }
+  select_text: 'Use selected'
+  selection_hidden: false
+  view: media_browser
+  view_display: default
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  c3396554-efc0-4c31-bfc7-390f9227223d:
+    settings:
+      upload_location: 'public://'
+      multiple: true
+      submit_text: 'Select files'
+      extensions: 'jpg jpeg gif png txt doc xls pdf ppt pps odt ods odp'
+    uuid: c3396554-efc0-4c31-bfc7-390f9227223d
+    weight: 1
+    label: Upload
+    id: upload
+  8c8611e4-8d92-4e64-93a2-7585455bdf0a:
+    settings:
+      view: media_browser
+      view_display: entity_browser_1
+      submit_text: 'Select entities'
+      auto_select: false
+    uuid: 8c8611e4-8d92-4e64-93a2-7585455bdf0a
+    weight: 2
+    label: View
+    id: view

@@ -1,0 +1,29 @@
+performance_tests.cache_render_explorer:
+  title: 'Cache render explorer'
+  route_name: performance_tests.cache_render_explorer
+  menu_name: main
+  weight: 51
+
+performance_tests.cache_page_explorer:
+  title: 'Cache page explorer'
+  route_name: performance_tests.cache_page_explorer
+  menu_name: main
+  weight: 52
+
+performance_tests.cache_dynamic_page_cache:
+  title: 'Cache dynamic page cache'
+  route_name: performance_tests.cache_dynamic_page_cache
+  menu_name: main
+  weight: 53
+
+performance_tests.cached_page_example_1:
+  title: 'Cached page 1'
+  route_name: performance_tests.cached_page_example_1
+  menu_name: main
+  weight: 53
+
+performance_tests.cached_page_example_2:
+  title: 'Cached page 2'
+  route_name: performance_tests.cached_page_example_2
+  menu_name: main
+  weight: 54

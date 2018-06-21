@@ -1,0 +1,17 @@
+uuid: 393b7fe0-5d39-4345-9cff-cbcc973c665a
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.fan_d_hotel
+  enforced:
+    config:
+      - user.role.administrator
+id: fan_d_hotel-a416e6833
+label: Administrator
+weight: -7
+internal: true
+audience: outsider
+group_type: fan_d_hotel
+permissions_ui: false
+permissions: {  }

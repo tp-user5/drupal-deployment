@@ -1,0 +1,14 @@
+uuid: e40f093b-3311-4d97-8be2-c94e0db81f4b
+name: 'POEI (EN)'
+mail: christophe.maymard@hotmail.com
+slogan: 'Slogan POEI (EN)'
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

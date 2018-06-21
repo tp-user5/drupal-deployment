@@ -1,0 +1,39 @@
+uuid: 96a4b724-3e45-4c72-9f7f-7e90e42288a4
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:72350f6a-95ca-4f88-a0b6-cc8a4fdd3f6e'
+  module:
+    - block_content
+    - block_visibility_groups
+    - language
+  theme:
+    - divert
+id: divert_drupal8
+theme: divert
+region: sidebar_second
+weight: -11
+provider: null
+plugin: 'block_content:72350f6a-95ca-4f88-a0b6-cc8a4fdd3f6e'
+settings:
+  id: 'block_content:72350f6a-95ca-4f88-a0b6-cc8a4fdd3f6e'
+  label: 'Drupal 8'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  language:
+    id: language
+    langcodes:
+      en: en
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'

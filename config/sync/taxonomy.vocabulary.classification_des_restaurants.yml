@@ -1,0 +1,9 @@
+uuid: 7c386cd6-5fa6-4b9f-b6ec-097d87214ad1
+langcode: en
+status: true
+dependencies: {  }
+name: 'Classification des restaurants'
+vid: classification_des_restaurants
+description: ''
+hierarchy: 0
+weight: 0

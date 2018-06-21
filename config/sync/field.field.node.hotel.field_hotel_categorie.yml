@@ -1,0 +1,23 @@
+uuid: fa3eac9c-7e93-45fa-9e7d-3e945a67d559
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hotel_categorie
+    - node.type.hotel
+  module:
+    - options
+id: node.hotel.field_hotel_categorie
+field_name: field_hotel_categorie
+entity_type: node
+bundle: hotel
+label: Catégorie
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

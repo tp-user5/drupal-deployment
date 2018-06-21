@@ -1,0 +1,26 @@
+uuid: 2c362e24-3f58-408b-8d95-c3b0fed7a01a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.site_du_groupe
+  module:
+    - field_layout
+    - layout_discovery
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: node.site_du_groupe.teaser
+targetEntityType: node
+bundle: site_du_groupe
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  langcode: true

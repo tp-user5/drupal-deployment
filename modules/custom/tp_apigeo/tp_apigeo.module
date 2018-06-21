@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains tp_apigeo.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function tp_apigeo_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the tp_apigeo module.
+    case 'help.page.tp_apigeo':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('TP de l&#039;API Geo de api.gouv.fr') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function tp_apigeo_theme() {
+  return [
+    'tp_apigeo' => [
+      'render element' => 'children',
+    ],
+  ];
+}

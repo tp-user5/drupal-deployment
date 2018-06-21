@@ -1,0 +1,136 @@
+<?php
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use \Drupal\node\NodeInterface;
+
+use Drupal\Core\Session;
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_cron().
+ */
+function hello_cron() {
+  drupal_set_message(t('Hello module cron task done.'), 'warning');
+}
+
+/**
+ * Implements hook_help().
+ */
+function hello_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the hello module.
+    case 'help.page.hello' :
+      return '<p>'.t('Hello module\'s help page.') . '</p>';
+  }
+}
+
+/**
+ * Implements hook_user_login().
+ */
+function hook_user_login($account) {
+
+  drupal_set_message(t(
+    'Welcome dear %name !',
+    ['%name' => $account->getAccountName()]
+  ));
+}
+
+/**
+ * Implements hook_node_update
+ * @param \Drupal\node\NodeInterface $node
+ */
+function hello_node_update(NodeInterface $node) {
+  $user = \Drupal::currentUser();
+  $database = \Drupal::database();
+  $database->insert('hello_node_history')
+    ->fields([
+      'nid' => $node->id(),
+      'uid' => $user->id(),
+      'update_time' => $node->getChangedTime(),
+    ])
+    ->execute();
+}
+
+/**
+ * Implements hook_node_delete
+ * @param \Drupal\node\NodeInterface $node
+ */
+function hello_node_delete(NodeInterface $node) {
+  $database = \Drupal::database();
+  // Delete the node's entries
+  $database->delete('hello_node_history')
+    ->condition('nid', $node->id(), '=')
+    ->execute();
+}
+
+/**
+ * Implements hook_page_attachments().
+ */
+function hello_page_attachments(array &$page) {
+  $page['#attached']['library'][] = 'hello/base';
+}
+
+/**
+ * @param array $variables
+ */
+function hello_preprocess_block(array &$variables) {
+  $class = \Drupal::config('hello.config')->get('color');
+  $variables['attributes']['class'][] = $class;
+  //drupal_set_message('TEST');
+}
+
+
+function hello_theme($existing, $type, $theme, $path) {
+  return array(
+    'hello_node_history' => array(
+      'template' => 'hello-node-history',
+      'variables' => array(
+        'count' => NULL,
+        'node' => NULL,
+      ),
+    ),
+  );
+}
+
+function hello_form_alter(array &$form, FormStateInterface &$form_state, $form_id) {
+  if ($form_id == 'contact_message_feedback_form') {
+    $form['phone_number'] = [
+      '#type' => 'tel',
+      '#title' => t('Telephone'),
+      '#required' => TRUE,
+    ];
+    $form['actions']['submit']['#value'] = t('SEND NOW!');
+    $form['name']['#weight'] = 100;
+    $form['mail']['#weight'] = 200;
+    $form['phone_number']['#weight'] = 300;
+    $form['message']['#weight'] = 400;
+    $form['actions']['#weight'] = 500;
+    unset($form['#process']);
+    $form['subject']['#access'] = FALSE;
+    // On ajoute un submit callback avant la méthode "::save".
+    // @see \Drupal\contact\MessageForm::save()
+    // @see \Drupal\Core\Entity\EntityForm::actions()
+    $index = array_search('::save', $form['actions']['submit']['#submit']);
+    array_splice($form['actions']['submit']['#submit'], $index, 0, ['hello_contact_message_feedback_form_submit']);
+  }
+}
+
+/**
+ * @param $form
+ * @param \Drupal\Core\Form\FormStateInterface $form_state
+ */
+function hello_contact_message_feedback_form_submit(&$form, FormStateInterface $form_state) {
+  // On ajoute le téléphone à l'entité message attachée au formulaire.
+  $message = $form_state->getFormObject()->getEntity();
+  $message->phone_number = $form_state->getValue('phone_number');
+}
+
+/**
+ * Implements hook_mail_alter().
+ * @param array $message
+ */
+function hello_mail_alter(&$message) {
+  if ($message['id'] == 'contact_page_mail') {
+    $message['body'][] = $message['params']['contact_message']->phone_number;
+  }
+}

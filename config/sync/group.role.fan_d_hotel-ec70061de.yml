@@ -1,0 +1,17 @@
+uuid: 6628ba18-576f-4eaf-94e5-624579024a8a
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.fan_d_hotel
+  enforced:
+    config:
+      - user.role.contributor
+id: fan_d_hotel-ec70061de
+label: Contributor
+weight: -8
+internal: true
+audience: outsider
+group_type: fan_d_hotel
+permissions_ui: false
+permissions: {  }

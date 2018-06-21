@@ -1,0 +1,20 @@
+uuid: b549006e-8acb-4580-b959-bafe84df9a0f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.classification_des_restaurants
+  module:
+    - path
+id: taxonomy_term.classification_des_restaurants.path
+field_name: path
+entity_type: taxonomy_term
+bundle: classification_des_restaurants
+label: 'Alias d''URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

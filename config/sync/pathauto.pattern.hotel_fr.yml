@@ -1,0 +1,33 @@
+uuid: 087551b7-056e-49e0-83e0-c2028686a330
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: hotel_fr
+label: 'Hôtel FR'
+type: 'canonical_entities:node'
+pattern: 'hotels/[node:field_hotel_categorie]etoiles/[node:title]'
+selection_criteria:
+  8410d4c6-a569-464e-b260-49830a522e2f:
+    id: node_type
+    bundles:
+      hotel: hotel
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 8410d4c6-a569-464e-b260-49830a522e2f
+  bb3cb245-3e52-446a-b603-d822fa64e07f:
+    id: language
+    langcodes:
+      fr: fr
+    negate: false
+    context_mapping:
+      language: 'node:langcode:language'
+    uuid: bb3cb245-3e52-446a-b603-d822fa64e07f
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Language

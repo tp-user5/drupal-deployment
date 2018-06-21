@@ -1,0 +1,19 @@
+uuid: 6b1e65ba-2901-4c5b-a814-8469ead129ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_site_groupe_title
+    - node.type.site_du_groupe
+id: node.site_du_groupe.field_site_groupe_title
+field_name: field_site_groupe_title
+entity_type: node
+bundle: site_du_groupe
+label: 'Site groupe Title'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

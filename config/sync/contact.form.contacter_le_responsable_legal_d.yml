@@ -1,0 +1,12 @@
+uuid: aca445c2-775c-4ed5-a32d-6c9eb5011b6a
+langcode: en
+status: true
+dependencies: {  }
+id: contacter_le_responsable_legal_d
+label: 'Contacter le responsable légal du site'
+recipients:
+  - christophe.maymard@hotmail.com
+reply: ''
+weight: 0
+message: 'Merci d''avoir contacté le responsable légal du site :)'
+redirect: ''

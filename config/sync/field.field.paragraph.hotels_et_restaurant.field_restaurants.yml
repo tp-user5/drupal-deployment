@@ -1,0 +1,28 @@
+uuid: db686c2e-8534-46a2-9d2c-e8d3e90307c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_restaurants
+    - node.type.restaurant
+    - paragraphs.paragraphs_type.hotels_et_restaurant
+id: paragraph.hotels_et_restaurant.field_restaurants
+field_name: field_restaurants
+entity_type: paragraph
+bundle: hotels_et_restaurant
+label: Restaurants
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      restaurant: restaurant
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

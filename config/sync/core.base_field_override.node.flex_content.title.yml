@@ -1,0 +1,18 @@
+uuid: 55866712-1464-4338-b119-66d08163dfbf
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.flex_content
+id: node.flex_content.title
+field_name: title
+entity_type: node
+bundle: flex_content
+label: Titre
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

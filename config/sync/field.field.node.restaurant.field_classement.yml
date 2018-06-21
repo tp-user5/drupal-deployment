@@ -1,0 +1,33 @@
+uuid: 6ea5e3ee-8f9c-4b0b-90cf-c2d48de2f7a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_classement
+    - node.type.restaurant
+    - taxonomy.vocabulary.classification_des_restaurants
+  content:
+    - 'taxonomy_term:classification_des_restaurants:e7cd6e1a-ef59-4897-87e6-9ad7c9299082'
+id: node.restaurant.field_classement
+field_name: field_classement
+entity_type: node
+bundle: restaurant
+label: Classement
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    target_uuid: e7cd6e1a-ef59-4897-87e6-9ad7c9299082
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      classification_des_restaurants: classification_des_restaurants
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

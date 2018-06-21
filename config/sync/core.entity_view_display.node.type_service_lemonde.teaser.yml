@@ -1,0 +1,26 @@
+uuid: f6678bd8-6752-4d6f-ba43-ea9a67edf70d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.type_service_lemonde
+  module:
+    - field_layout
+    - layout_discovery
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: node.type_service_lemonde.teaser
+targetEntityType: node
+bundle: type_service_lemonde
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  langcode: true

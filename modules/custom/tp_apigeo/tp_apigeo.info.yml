@@ -1,0 +1,5 @@
+name: 'tp_apigeo'
+type: module
+description: "TP de l'API Geo de api.gouv.fr"
+core: 8.x
+package: 'Custom'

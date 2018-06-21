@@ -1,0 +1,31 @@
+uuid: a2b4a58d-fd39-411a-aa95-28f63c2ace8a
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:4c346a26-2ae8-4512-a857-552ed3d46677'
+  module:
+    - block_content
+    - block_visibility_groups
+  theme:
+    - divert
+id: weather
+theme: divert
+region: sidebar_second
+weight: -12
+provider: null
+plugin: 'block_content:4c346a26-2ae8-4512-a857-552ed3d46677'
+settings:
+  id: 'block_content:4c346a26-2ae8-4512-a857-552ed3d46677'
+  label: Weather
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

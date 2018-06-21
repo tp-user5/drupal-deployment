@@ -1,0 +1,18 @@
+uuid: 4e05bf10-b03c-42d5-87d0-377b33bc3a18
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.basic
+id: block_content.basic.moderation_state
+field_name: moderation_state
+entity_type: block_content
+bundle: basic
+label: 'État de modération'
+description: 'L''état de modération de cet élément de contenu.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

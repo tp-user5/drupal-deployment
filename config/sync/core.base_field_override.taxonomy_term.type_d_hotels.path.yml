@@ -1,0 +1,20 @@
+uuid: 4d605d4f-66fd-4e20-993c-ecdce1fa53e9
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.type_d_hotels
+  module:
+    - path
+id: taxonomy_term.type_d_hotels.path
+field_name: path
+entity_type: taxonomy_term
+bundle: type_d_hotels
+label: 'Alias d''URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

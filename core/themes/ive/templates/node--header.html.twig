@@ -1,0 +1,48 @@
+{#
+/**
+ * @file
+ * Ive's theme implementation to display a node.
+ *
+ * Available variables:
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the main title tag that appears in the template.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the main title tag that appears in the template.
+ * - page: Flag for the full page state. Will be true if view_mode is 'full'.
+ * - title_attributes: Same as attributes, except applied to the main title
+ *   tag that appears in the template.
+ * - url: Direct URL of the current node.
+ * - label: The title of the node.
+ * - display_submitted: Whether submission information should be displayed.
+ * - author_picture: The node author user entity, rendered using the "compact"
+ *   view mode.
+ * - author_attributes: Same as attributes, except applied to the author of
+ *   the node tag that appears in the template.
+ * - author_name: Themed author name field.
+ * - date: Themed creation date field.
+ * - metadata: Metadata for this node.
+ * - submitted_title:
+ * - field_tags:
+ * @see template_preprocess_node()
+ */
+#}
+<header>
+    <h1>node--header</h1>
+    {{ title_prefix }}
+    {% if not page %}
+        <h2{{ title_attributes.addClass('node__title') }}>
+            <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+        </h2>
+    {% endif %}
+    {{ title_suffix }}
+    {% if display_submitted %}
+        <div class="node__meta">
+            {{ author_picture }}
+            <span{{ author_attributes }}>{{ submitted_title }}</span>
+            {{ metadata }}
+        </div>
+    {% endif %}
+    {%  if field_tags %}
+    {{ field_tags }}
+    {%  endif %}
+</header>

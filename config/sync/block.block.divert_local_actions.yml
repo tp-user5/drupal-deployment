@@ -1,0 +1,20 @@
+uuid: 85d8fab5-3315-4095-87d1-bee4d0d3e1f7
+langcode: en
+status: true
+dependencies:
+  theme:
+    - divert
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: divert_local_actions
+theme: divert
+region: content
+weight: -6
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,6 @@
+tp_apigeo.page:
+  title: 'API Geo'
+  route_name: tp_apigeo.index
+  description: 'TP API Geo de api.gouv.fr'
+  menu_name: main
+  

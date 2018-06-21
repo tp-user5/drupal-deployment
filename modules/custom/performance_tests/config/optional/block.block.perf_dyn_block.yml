@@ -1,0 +1,22 @@
+uuid: a10bc43f-8a21-4e33-bc3f-d3250b4f1039
+langcode: fr
+status: true
+dependencies:
+  module:
+    - performance_tests
+  theme:
+    - bartik
+_core:
+  default_config_hash: oxjqN-t4bZN4PuGrq-ij91sACLIZKSF_D8AMfFdUcgY
+id: perf_dyn_block
+theme: bartik
+region: sidebar_second
+weight: -10
+provider: null
+plugin: dynamic_block
+settings:
+  id: dynamic_block
+  label: 'Dynamic block'
+  provider: performance_tests
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,18 @@
+uuid: fb11721c-1aef-445b-89a1-9a367f0bb88d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.flex_content
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.flex_content
+target_entity_type_id: node
+target_bundle: flex_content
+default_langcode: site_default
+language_alterable: false

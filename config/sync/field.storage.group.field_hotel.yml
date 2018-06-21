@@ -1,0 +1,20 @@
+uuid: 4e811bf9-dc0c-47a9-8928-51887624694b
+langcode: en
+status: true
+dependencies:
+  module:
+    - group
+    - node
+id: group.field_hotel
+field_name: field_hotel
+entity_type: group
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

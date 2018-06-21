@@ -1,0 +1,22 @@
+uuid: ea0379cf-1ee9-4ab2-a4ad-411365fcf1dc
+langcode: fr
+status: true
+dependencies:
+  module:
+    - performance_tests
+  theme:
+    - bartik
+_core:
+  default_config_hash: f0jbeBRphqxwqPvLmtl79A5lxdvTos4ODU-irpGqiXY
+id: perf_sblock_block
+theme: bartik
+region: sidebar_second
+weight: -8
+provider: null
+plugin: some_block
+settings:
+  id: some_block
+  label: 'Some block'
+  provider: performance_tests
+  label_display: '0'
+visibility: {  }

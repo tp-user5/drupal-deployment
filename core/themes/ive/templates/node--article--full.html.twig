@@ -1,0 +1,32 @@
+{% extends 'node--common.html.twig' %}
+
+{% block header %}
+    {# Article written by {{ author_name }} on {{ date }} #}
+    {{ include('node--header.html.twig', {
+        title_prefix: title_prefix,
+        page: page,
+        title_attributes: title_attributes,
+        url: url,
+        label: label,
+        title_suffix: title_suffix,
+        display_submitted: display_submitted,
+        author_picture: author_picture,
+        author_attributes: author_attributes,
+        author_name: author_name,
+        date: date,
+        metadata: metadata,
+
+        submitted_title: "Article written by @author_name on @date"|t({'@author_name': author_name, '@date': date}),
+    }, with_context=false) }}
+{%  endblock header %}
+
+{% block top %}
+    {{ content.field_image }}
+{%  endblock %}
+
+{%  block content %}
+    {{ content|without('field_image') }}
+{%  endblock %}
+
+
+

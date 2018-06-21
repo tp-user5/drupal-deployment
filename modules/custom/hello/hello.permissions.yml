@@ -1,0 +1,9 @@
+Access_hello:
+  title: 'Hello module access permission'
+  decription: 'Hello module access permission'
+  restrict access: 'true'
+
+administer_hello:
+  title: 'Hello module Administer access permission'
+  decription: 'Hello module Administer access permission'
+  restrict access: 'true'

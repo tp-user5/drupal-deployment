@@ -1,0 +1,45 @@
+uuid: 0f90d92c-611a-4a95-b4b1-7c72aae202c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.group_nodes
+  module:
+    - block_visibility_groups
+    - ctools
+    - system
+    - views
+  theme:
+    - ive
+id: ive_views_block__group_nodes_block_1
+theme: ive
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:group_nodes-block_1'
+settings:
+  id: 'views_block:group_nodes-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  'entity_bundle:group':
+    id: 'entity_bundle:group'
+    bundles:
+      fan_d_hotel: fan_d_hotel
+    negate: false
+    context_mapping:
+      group: '@group.group_route_context:group'
+  request_path:
+    id: request_path
+    pages: '/group/*/*'
+    negate: true
+    context_mapping: {  }

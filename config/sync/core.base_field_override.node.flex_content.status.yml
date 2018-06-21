@@ -1,0 +1,22 @@
+uuid: 781fb06e-6e8d-45c5-b473-90bf621f685a
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.flex_content
+id: node.flex_content.status
+field_name: status
+entity_type: node
+bundle: flex_content
+label: Publié
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

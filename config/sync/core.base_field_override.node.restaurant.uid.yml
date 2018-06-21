@@ -1,0 +1,20 @@
+uuid: 54463a5f-64ca-4cef-9c2f-d84dba963ab7
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.restaurant
+id: node.restaurant.uid
+field_name: uid
+entity_type: node
+bundle: restaurant
+label: 'Écrit par'
+description: 'Le nom d''utilisateur de l''auteur du contenu.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getCurrentUserId'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

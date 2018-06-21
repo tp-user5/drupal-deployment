@@ -1,0 +1,20 @@
+uuid: b16685bd-ef86-4338-88d2-ab8e36da03dc
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.classification_des_restaurants
+  module:
+    - text
+id: taxonomy_term.classification_des_restaurants.description
+field_name: description
+entity_type: taxonomy_term
+bundle: classification_des_restaurants
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

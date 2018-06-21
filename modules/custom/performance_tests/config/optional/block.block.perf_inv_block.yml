@@ -1,0 +1,22 @@
+uuid: 09878d06-c7c9-47a4-81ca-bb285e60fb60
+langcode: fr
+status: true
+dependencies:
+  module:
+    - performance_tests
+  theme:
+    - bartik
+_core:
+  default_config_hash: IBAQnyqQ0rcJTJJ2A3fataNT2AdwCdR_pYaQ7RfeIco
+id: perf_inv_block
+theme: bartik
+region: sidebar_second
+weight: -13
+provider: null
+plugin: invariable_block
+settings:
+  id: invariable_block
+  label: 'Invariable block'
+  provider: performance_tests
+  label_display: '0'
+visibility: {  }

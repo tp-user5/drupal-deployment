@@ -1,0 +1,22 @@
+uuid: 2579ec36-6df8-43f0-bdc5-b53673da585b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.flex_content
+id: node.flex_content.promote
+field_name: promote
+entity_type: node
+bundle: flex_content
+label: 'Promu en page d''accueil'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

@@ -1,0 +1,22 @@
+uuid: c283aaba-5ba4-4374-9046-21eaa2319481
+langcode: fr
+status: true
+dependencies:
+  module:
+    - performance_tests
+  theme:
+    - bartik
+_core:
+  default_config_hash: _krSt3x7yq6VL-8Vl-H8d1asjVg4itUHLoQ_8cUsgUM
+id: perf_slow_block
+theme: bartik
+region: sidebar_second
+weight: -9
+provider: null
+plugin: perftests_slow_block
+settings:
+  id: perftests_slow_block
+  label: 'Slow block'
+  provider: performance_tests
+  label_display: '0'
+visibility: {  }

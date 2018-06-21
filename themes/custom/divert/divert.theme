@@ -1,0 +1,56 @@
+<?php
+
+use SameerShelavale\PhpCountriesArray\CountriesArray;
+use Th3Mouk\YahooWeatherAPI\YahooWeatherAPI;
+
+// Add your custom theme override functions here.
+
+/**
+ * 
+ */
+function divert_preprocess_block__countrylist(&$variables) {
+    $variables['country_list'] = CountriesArray::get();
+}
+
+/**
+ * 
+ */
+function divert_preprocess_block__weather(&$variables) {
+    $weather = new YahooWeatherAPI();
+    $variables['weather'] = $weather->callApiWoeid('615702');
+}
+
+/**
+ * Implements template_preprocess_field().
+ */
+function divert_preprocess_field(&$variables, $hook) {
+}
+
+/**
+ * Implements template_preprocess_html().
+ *
+ * Adds additional classes
+ */
+function divert_preprocess_html(&$variables) {
+}
+
+/**
+ * Implements template_preprocess_node
+ *
+ * Add template suggestions and classes
+ */
+function divert_preprocess_node(&$variables) {
+}
+
+/**
+ * Implements template_preprocess_page
+ *
+ * Add convenience variables and template suggestions
+ */
+function divert_preprocess_page(&$variables) {
+}
+
+/**
+ * Implements template_preprocess_views_view().
+ */
+function divert_preprocess_views_view(&$variables) {}
